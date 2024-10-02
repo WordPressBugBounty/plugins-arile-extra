@@ -3,7 +3,7 @@ $consultstreet_main_slider_options = get_theme_mod('consultstreet_main_slider_co
 $consultstreet_main_slider_disabled = get_theme_mod('consultstreet_main_slider_disabled', true);
 $consultstreet_main_slider_overlay_disable = get_theme_mod('consultstreet_main_slider_overlay_disable', true);
 if( $consultstreet_main_slider_disabled == true ): ?>
-<section class="theme-main-slider <?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'ConsultZone' == $activate_theme){echo 'vrsn-two';}?>" id="theme-slider">
+<section class="theme-main-slider <?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'ConsultZone' == $activate_theme || 'ConsultGuide' == $activate_theme){echo 'vrsn-two';}?>" id="theme-slider">
     <div id="theme-main-slider" class="owl-carousel owl-theme">
 		<?php 
 			$consultstreet_main_slider_options = json_decode($consultstreet_main_slider_options);
@@ -115,7 +115,13 @@ if( $consultstreet_main_slider_disabled == true ): ?>
 					$image2_slide = 20;
 					$slider1_title = 'The Fastest Way to Achieve Success';
 					$slider2_title = 'Amazing Business Ideas to Achieve Success';
-				} 					
+				} 
+				if('ConsultGuide' == $activate_theme){
+			        $image1_slide = 21;
+					$image2_slide = 2;
+					$slider1_title = 'Top Consulting Ideas for Start Business';
+					$slider2_title = 'Best Choice for Your Business';	
+				}				
 			
 			?>
 			
