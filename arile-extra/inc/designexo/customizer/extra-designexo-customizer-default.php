@@ -506,6 +506,32 @@ if ( ! function_exists( 'arileextra_designexo_main_slider_default_content' ) ) :
 						
 					) );
 				}
+				
+				if('CreationWP' == $activate_theme){
+						$designexo_main_slider_data->default = json_encode( array(
+						array(
+						'title'      => esc_html__( 'Stylish Design Creation', 'arile-extra' ),
+						'subtitle'       => esc_html__( 'Interior Design', 'arile-extra' ),
+						'text'       => esc_html__( 'We provide all types of interior and architecture design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.', 'arile-extra' ),
+						'button_text'      => __('Check it out','arile-extra'),
+						'link'       => '#',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-slide35.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b10',				
+						),
+						array(
+						'title'      => esc_html__( 'Living Area Redesign', 'arile-extra' ),
+						'subtitle'       => esc_html__( 'Enjoy Your Space', 'arile-extra' ),
+						'text'       => esc_html__( 'We provide all types of interior and architecture design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.', 'arile-extra' ),
+						'button_text'      => __('Check it out','arile-extra'),
+						'link'       => '#',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-slide1.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b14',
+						),
+						
+					) );
+				}
  				
 					
 				}
@@ -523,7 +549,7 @@ if ( ! function_exists( 'arileextra_designexo_theme_info_default_content' ) ) :
 			
 				if ( ! empty( $designexo_theme_info_content_control ) ) {
 					
-				if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme){
+				if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'CreationWP' == $activate_theme){
 					$designexo_theme_info_content_control->default = json_encode( array(
 						array(
 						'icon_value' => 'fa fa-star-o',
@@ -740,7 +766,7 @@ if ( ! function_exists( 'arileextra_designexo_service_default_content' ) ) :
 			$activate_theme_data = wp_get_theme(); // getting current theme data
             $activate_theme = $activate_theme_data->name;
 					
-				if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Interior Trends' == $activate_theme){	
+				if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme){	
 					
 					$designexo_service_data->default = json_encode( array(
 						array(
@@ -1329,7 +1355,7 @@ if ( ! function_exists( 'arileextra_designexo_project_default_content' ) ) :
 					) );
 				}
 				
-				if('Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme){	
+				if('Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'CreationWP' == $activate_theme){	
 					$designexo_project_data->default = json_encode( array(
 						array(
 						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-project16.jpg',

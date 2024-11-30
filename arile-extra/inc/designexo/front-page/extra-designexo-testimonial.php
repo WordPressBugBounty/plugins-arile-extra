@@ -2,7 +2,7 @@
 $designexo_testimonial_options = get_theme_mod('designexo_testimonial_content');
 $designexo_testimonial_disabled = get_theme_mod('designexo_testimonial_disabled', true); 
 $designexo_testimonial_area_title = get_theme_mod('designexo_testimonial_area_title', __('Testimonials','arile-extra'));
-if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme){
+if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme){
 $designexo_testimonial_area_des = get_theme_mod('designexo_testimonial_area_des', __('WHAT OUR CLIENTS SAY ABOUT US','arile-extra'));
 }
 if('IntecoPress' == $activate_theme){ $designexo_testimonial_area_des = get_theme_mod('designexo_testimonial_area_des', __('WHAT OUR CLIENTS SAY','arile-extra')); }
@@ -50,7 +50,7 @@ if($designexo_testimonial_disabled == true):
 					?>
 					    <div class="col-lg-4 col-md-6 col-sm-12">
 						
-						   <?php if('Architect Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme){ ?>
+						   <?php if('Architect Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'CreationWP' == $activate_theme){ ?>
 						
 							<article class="theme-testimonial-block wow animate fadeInUp" data-wow-delay=".3s">
 								<?php if($testimonial_iteam->image_url != null): ?>
@@ -103,7 +103,7 @@ if($designexo_testimonial_disabled == true):
 							
 					    </div>
 					<?php } } else 
-					{ if('Architect Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme){ ?> 	
+					{ if('Architect Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'CreationWP' == $activate_theme){ ?> 	
 					<div class="col-lg-4 col-md-6 col-sm-12">
 						<article class="theme-testimonial-block wow animate fadeInUp" data-wow-delay=".3s">
 						        <figure class="thumbnail">

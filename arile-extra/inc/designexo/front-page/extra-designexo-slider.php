@@ -24,7 +24,7 @@ if( $designexo_main_slider_disabled == true ): ?>
 			<?php } ?>
 			<?php if($title != '' || $img_description!= '' || $readmore_button!=''){ ?>
 				<div class="container theme-slider-content">
-					<div class="theme-text-<?php if('Designexo' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior Dark' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'BeautyCare' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Business Model' == $activate_theme){ echo 'left'; } ?><?php if('Empresa' == $activate_theme || 'InteriorWP' == $activate_theme || 'Architects' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'SpiceMag' == $activate_theme || 'DesignTech' == $activate_theme || 'InteriorX' == $activate_theme || 'Technoex' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Interior Trends' == $activate_theme){ echo 'center'; } ?> theme-caption-bg<?php if('Empresa' == $activate_theme || 'Architects' == $activate_theme || 'SpiceMag' == $activate_theme || 'InteriorX' == $activate_theme || 'Technoex' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme || 'Business Model' == $activate_theme){ echo '2'; } ?> <?php if('InteriorWP' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'DesignTech' == $activate_theme || 'Atlanta Blog' == $activate_theme){ echo 'align-center';} ?>">
+					<div class="theme-text-<?php if('Designexo' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior Dark' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'BeautyCare' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Business Model' == $activate_theme || 'CreationWP' == $activate_theme){ echo 'left'; } ?><?php if('Empresa' == $activate_theme || 'InteriorWP' == $activate_theme || 'Architects' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'SpiceMag' == $activate_theme || 'DesignTech' == $activate_theme || 'InteriorX' == $activate_theme || 'Technoex' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Interior Trends' == $activate_theme){ echo 'center'; } ?> theme-caption-bg<?php if('Empresa' == $activate_theme || 'Architects' == $activate_theme || 'SpiceMag' == $activate_theme || 'InteriorX' == $activate_theme || 'Technoex' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme || 'Business Model' == $activate_theme){ echo '2'; } ?> <?php if('InteriorWP' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'DesignTech' == $activate_theme || 'Atlanta Blog' == $activate_theme){ echo 'align-center';} ?>">
 					<?php if($subtitle != ''){ ?>
 						<h5 class="sub-title"><?php echo $subtitle; ?></h5>
 				    <?php } ?>
@@ -678,6 +678,48 @@ if( $designexo_main_slider_disabled == true ): ?>
 			</div>
 			
 		    <?php } ?>
+			
+			
+			<?php if('CreationWP' == $activate_theme){ ?>
+			<div class="item" style="background-image:url(<?php echo arile_extra_plugin_url; ?>/inc/designexo/images/theme-slide35.jpg);">
+				<div class="container theme-slider-content">
+					<div class="theme-text-left theme-caption-bg">
+					    <h5 class="sub-title"><?php esc_html_e('Interior Design','arile-extra'); ?></h5>
+						<h1 class="title-large"><?php esc_html_e('Stylish Design Creation','arile-extra'); ?></h1>
+						<p class="description"><?php esc_html_e('We provide all types of interior and architecture design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.','arile-extra'); ?></p>
+						<div class="mt-4 pt-2">
+							<a href="#" class="btn-small btn-slider"><?php esc_html_e('Check it out','arile-extra'); ?></a>
+						</div>							
+					</div>
+				</div>
+				<?php if($designexo_main_slider_overlay_disable == true) { ?>
+				<div class="overlay"></div>
+				<?php } ?>
+			</div>
+			<div class="item" style="background-image:url(<?php echo arile_extra_plugin_url; ?>/inc/designexo/images/theme-slide1.jpg);">
+				<div class="container theme-slider-content">
+					<div class="theme-text-left theme-caption-bg">
+					    <h5 class="sub-title"><?php esc_html_e('Enjoy Your Space','arile-extra'); ?></h5>
+						<h1 class="title-large"><?php esc_html_e('Living Area Redesign','arile-extra'); ?></h1>
+						<p class="description"><?php esc_html_e('We provide all types of interior and architecture design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.','arile-extra'); ?></p>
+						<div class="mt-4 pt-2">
+							<a href="#" class="btn-small btn-slider"><?php esc_html_e('Check it out','arile-extra'); ?></a>
+						</div>							
+					</div>
+				</div>
+				<?php if($designexo_main_slider_overlay_disable == true) { ?>
+				<div class="overlay"></div>
+				<?php } ?>
+			</div>
+			<?php } ?>
+			
+			
+			
+			
+			
+			
+			
+			
 			
 	    <?php } ?>	
 		</div>		

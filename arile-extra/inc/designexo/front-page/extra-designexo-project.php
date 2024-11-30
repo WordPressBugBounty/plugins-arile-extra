@@ -3,7 +3,7 @@ $designexo_project_content  = get_theme_mod( 'designexo_project_content');
 $designexo_project_disabled = get_theme_mod('designexo_project_disabled', true); 
 $designexo_project_front_container_size = get_theme_mod('designexo_project_front_container_size', 'container-fluid');
 $designexo_project_area_title = get_theme_mod('designexo_project_area_title', __('Our Portfolio','arile-extra'));
-if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'IntecoPress' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior House' == $activate_theme || 'Interior Trends' == $activate_theme){
+if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'IntecoPress' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior House' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme){
 $designexo_project_area_des = get_theme_mod('designexo_project_area_des', __('ALL INTERIOR DESIGN SOLUTIONS','arile-extra'));
 }
 if('Architect House' == $activate_theme){
@@ -25,7 +25,7 @@ $designexo_project_area_des = get_theme_mod('designexo_project_area_des', __('OU
 $designexo_project_button_text = get_theme_mod('designexo_project_button_text', __('VIEW ALL PROJECTS','arile-extra'));
 $designexo_project_button_link = get_theme_mod('designexo_project_button_link', '#');
 if($designexo_project_disabled == true): ?>
-	<section class="theme-block theme-project theme-bg-grey pb-0 <?php if('Interior Dark' == $activate_theme || 'Interior Decor' == $activate_theme || 'Architect House' == $activate_theme){ echo 'vrsn-three'; } ?>" id="theme-project">
+	<section class="theme-block theme-project theme-bg-grey pb-0 <?php if('Interior Dark' == $activate_theme || 'Interior Decor' == $activate_theme || 'Architect House' == $activate_theme || 'CreationWP' == $activate_theme){ echo 'vrsn-three'; } ?>" id="theme-project">
 	    <?php if($designexo_project_area_title != null || $designexo_project_area_des != null): ?>
 		<div class="container">
 			<div class="row">
@@ -318,7 +318,7 @@ if($designexo_project_disabled == true): ?>
 							
 						<?php } ?>
 						
-						<?php if('Interior Dark' == $activate_theme || 'Interior Decor' == $activate_theme){ ?>
+						<?php if('Interior Dark' == $activate_theme || 'Interior Decor' == $activate_theme || 'CreationWP' == $activate_theme){ ?>
 
 							<div class="col-lg-3 col-md-6 col-sm-12">	
 								<article class="theme-project-content mb-0 wow animate zoomIn" data-wow-delay=".3s">
