@@ -90,6 +90,10 @@ if ( ! function_exists( 'arileextra_arilewp_main_slider_default_content' ) ) :
 				$image1_slide = 31;
 				$image2_slide = 27;
 		}
+		if('Hague Firm' == $activate_theme){
+				$image1_slide = 32;
+				$image2_slide = 14;
+		}
 			
 			if('InteriorPress' == $activate_theme){	
 				$slide1_title = 'ELEGANT & COMFORTABLE';
@@ -155,6 +159,10 @@ if ( ! function_exists( 'arileextra_arilewp_main_slider_default_content' ) ) :
 			$slide1_title = "MODERN HOME DECOR";
 			$slide2_title = 'AWARD WINNINGS DESIGN';
 			}
+			elseif('Hague Firm' == $activate_theme){	
+			$slide1_title = "We Craft Unique Business Ideas";
+			$slide2_title = 'We Create Unique Digital Experiences';
+			}
 			else{
 			    $slide1_title = 'We Create Amazing WordPress Themes';
 				$slide2_title = 'Best Digital Marketing Solutions';			
@@ -171,6 +179,9 @@ if ( ! function_exists( 'arileextra_arilewp_main_slider_default_content' ) ) :
 		}
 		elseif('Interior Space' == $activate_theme){
 			$slider_desc = "We provide all types of interior and architecture design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.";
+		}
+		elseif('Hague Firm' == $activate_theme){
+			$slider_desc = "We are very happy to present to you Hague Firm, the powerful and flexible multi-purpose WordPress theme. Not only does Hague Firm outstand with many new features but suitable for all creatives and businesses. Join 2500+ customers.";
 		}
 		else{
 			$slider_desc = "We are very happy to present to you ArileWP, the powerful and flexible multi-purpose WordPress theme. Not only does ArileWP outstand with many new features but suitable for all creatives and businesses. Join 2500+ customers.";

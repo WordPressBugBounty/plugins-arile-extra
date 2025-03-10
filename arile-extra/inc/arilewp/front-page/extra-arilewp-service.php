@@ -47,11 +47,11 @@ if($arilewp_service_area_disabled == true): ?>
 			?>
 			<div class="col-lg-4 col-md-6 col-sm-12">				
 		        
-					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
+					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre' && $activate_theme != 'Hague Firm'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
 					
 					<?php if($features_item->choice == 'customizer_repeater_image'){ ?>
 							<?php if ( ! empty( $image ) ) : ?>
-							<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '-two';} ?>">
+							<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '-two';} ?>">
 								<?php if ( ! empty( $link ) ) : ?>
 									<a href="<?php echo $link; ?>" <?php if($open_new_tab== 'yes' || $open_new_tab== 'on') { echo "target='_blank'"; } ?>>
 									   <img class="img-fluid" src="<?php echo esc_url( $image ); ?>" <?php if ( ! empty( $title ) ) : ?> alt="<?php echo esc_attr( $title ); ?>" title="<?php echo esc_attr( $title ); ?>" <?php endif; ?> />
@@ -64,7 +64,7 @@ if($arilewp_service_area_disabled == true): ?>
 							<?php endif; ?>
 						<?php } else if($features_item->choice =='customizer_repeater_icon'){ ?>
 							<?php if ( ! empty( $icon ) ) :?>
-							<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '-two';} ?>">
+							<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '-two';} ?>">
 									<?php if ( ! empty( $link ) ) : ?>
 											<a href="<?php echo $link; ?>" <?php if($open_new_tab== 'yes' || $open_new_tab== 'on') { echo "target='_blank'"; } ?>><i class="fa <?php echo esc_html( $icon ); ?>"></i></a>
 									<?php endif; ?>
@@ -75,7 +75,7 @@ if($arilewp_service_area_disabled == true): ?>
 							<?php endif; ?>
 						<?php } ?>
 						
-						<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '<div class="media-body">';} ?>
+						<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '<div class="media-body">';} ?>
 							<?php if ( ! empty( $title ) ) : 
 								if(empty($link)){ ?>
 									<h5 class="service-title"><?php echo esc_html( $title ); ?></h5><?php
@@ -89,7 +89,7 @@ if($arilewp_service_area_disabled == true): ?>
 								<p><?php echo wp_kses_post( html_entity_decode( $text ) ); ?></p>
 							<?php endif; ?>
 							
-						<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '</div>';} ?>
+						<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '</div>';} ?>
 						
 					</article>
 				
@@ -120,8 +120,8 @@ if($arilewp_service_area_disabled == true): ?>
 
 		?>
 				<div class="col-lg-4 col-md-6 col-sm-12">				
-					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
-						<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '-two';} ?>">
+					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre' && $activate_theme != 'Hague Firm'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
+						<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '-two';} ?>">
                         <?php if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme){ ?>
 						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/arilewp/images/theme-service1.jpg" alt="Architectural Design" title="Architectural Design"></a>
 						<?php } elseif('Architect Design' == $activate_theme || 'Architecto' == $activate_theme){ ?>
@@ -134,15 +134,15 @@ if($arilewp_service_area_disabled == true): ?>
 							<a href="#"><i class="fa fa-mobile"></i></a>
 					    <?php }	?>							
 						</figure>
-						<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '<div class="media-body">';} ?>
+						<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '<div class="media-body">';} ?>
 						<h5 class="service-title"><a href="#"><?php esc_html_e(''.$service1_title.'','arile-extra'); ?></a></h5>
 						<p><?php esc_html_e('Lorem Ipsum is simply text of the printing and typesetting industry. Lorem ipsum has been dummy.','arile-extra'); ?></p>
-						<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '</div>';} ?>
+						<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '</div>';} ?>
 					</article>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">				
-					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
-						<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '-two';} ?>">
+					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre' && $activate_theme != 'Hague Firm'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
+						<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '-two';} ?>">
                         <?php if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme){ ?>
 						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/arilewp/images/theme-service2.jpg" alt="Interior Design" title="Interior Design"></a>
 						<?php } elseif('Architect Design' == $activate_theme || 'Architecto' == $activate_theme){ ?>
@@ -155,15 +155,15 @@ if($arilewp_service_area_disabled == true): ?>
 							<a href="#"><i class="fa fa-opencart"></i></a>
 					    <?php }	?>	
 						</figure>
-					<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '<div class="media-body">';} ?>
+					<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '<div class="media-body">';} ?>
 						<h5 class="service-title"><a href="#"><?php esc_html_e(''.$service2_title.'','arile-extra'); ?></a></h5>
 						<p><?php esc_html_e('Lorem Ipsum is simply text of the printing and typesetting industry. Lorem ipsum has been dummy.','arile-extra'); ?></p>
-					<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '</div>';} ?>
+					<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '</div>';} ?>
 					</article>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">				
-					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
-						<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '-two';} ?>">	
+					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre' && $activate_theme != 'Hague Firm'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
+						<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '-two';} ?>">	
 						<?php if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme){ ?>
 						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/arilewp/images/theme-service3.jpg" alt="Lighting Design" title="Lighting Design"></a>
 						<?php } elseif('Architect Design' == $activate_theme || 'Architecto' == $activate_theme){ ?>
@@ -176,10 +176,10 @@ if($arilewp_service_area_disabled == true): ?>
 							<a href="#"><i class="fa fa-users"></i></a>
 					    <?php }	?>
 						</figure>
-					<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '<div class="media-body">';} ?>
+					<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '<div class="media-body">';} ?>
 						<h5 class="service-title"><a href="#"><?php esc_html_e(''.$service3_title.'','arile-extra'); ?></a></h5>
 						<p><?php esc_html_e('Lorem Ipsum is simply text of the printing and typesetting industry. Lorem ipsum has been dummy.','arile-extra'); ?></p>
-					<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre'){echo '</div>';} ?>
+					<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '</div>';} ?>
 					</article>
 				</div>		
 			<?Php	

@@ -12,17 +12,17 @@ if('Agency Street' == $activate_theme || 'Agency Firm' == $activate_theme){
 $activate_theme_data = wp_get_theme(); // getting current theme data
 $activate_theme = $activate_theme_data->name;
 if($arilewp_project_disabled == true): ?>
-	<section class="theme-block theme-project <?php if($activate_theme == 'Business Street' || $activate_theme == 'Alberta' || 'InnoPress' == $activate_theme || 'Agency Street' == $activate_theme || 'Etowah' == $activate_theme) { echo 'theme-bg-dark'; } else { echo 'theme-bg-grey';} ?>" id="theme-project">
+	<section class="theme-block theme-project <?php if($activate_theme == 'Business Street' || $activate_theme == 'Alberta' || 'InnoPress' == $activate_theme || 'Agency Street' == $activate_theme || 'Etowah' == $activate_theme || 'Hague Firm' == $activate_theme) { echo 'theme-bg-dark'; } else { echo 'theme-bg-grey';} ?>" id="theme-project">
 	    <?php if($arilewp_project_area_title != null || $arilewp_project_area_des != null): ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="theme-section-module text-center">
 					<?php if($arilewp_project_area_title != null): ?>
-						<p class="theme-section-subtitle wow animate fadeInLeft <?php if($activate_theme == 'Business Street' || $activate_theme == 'Alberta' || 'InnoPress' == $activate_theme || 'Agency Street' == $activate_theme || 'Etowah' == $activate_theme) { echo 'text-light'; } ?> " data-wow-delay=".3s"><?php echo wp_kses_post($arilewp_project_area_title); ?></p>
+						<p class="theme-section-subtitle wow animate fadeInLeft <?php if($activate_theme == 'Business Street' || $activate_theme == 'Alberta' || 'InnoPress' == $activate_theme || 'Agency Street' == $activate_theme || 'Etowah' == $activate_theme || 'Hague Firm' == $activate_theme) { echo 'text-light'; } ?> " data-wow-delay=".3s"><?php echo wp_kses_post($arilewp_project_area_title); ?></p>
 					<?php endif; ?>
 					<?php if($arilewp_project_area_des != null): ?>
-						<h2 class="theme-section-title wow animate fadeInRight <?php if($activate_theme == 'Business Street' || $activate_theme == 'Alberta' || 'InnoPress' == $activate_theme || 'Agency Street' == $activate_theme || 'Etowah' == $activate_theme) { echo 'text-light'; } ?>" data-wow-delay=".3s"><?php echo wp_kses_post($arilewp_project_area_des); ?></h2>
+						<h2 class="theme-section-title wow animate fadeInRight <?php if($activate_theme == 'Business Street' || $activate_theme == 'Alberta' || 'InnoPress' == $activate_theme || 'Agency Street' == $activate_theme || 'Etowah' == $activate_theme || 'Hague Firm' == $activate_theme) { echo 'text-light'; } ?>" data-wow-delay=".3s"><?php echo wp_kses_post($arilewp_project_area_des); ?></h2>
 					<?php endif; ?>
 						<div class="theme-separator-line-horrizontal-full wow animate fadeInUpBig" data-wow-delay=".3s"></div>
 					</div>
