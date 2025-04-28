@@ -18,6 +18,10 @@ if('Decorexo' == $activate_theme){
 	$title = 'Featured Services';
     $description = "We provide the world's best interior design and architectural solutions for you.";	
 }
+if('Architect Hub' == $activate_theme){				
+	$title = 'We Build Creative Architecture Design Solutions';
+    $description = "Architect and interior design services";	
+}
 if('EnvoPress' == $activate_theme || 'EarnPress' == $activate_theme){				
 	$title = 'We offer best services';
     $description = "We provide the world's best services to growth your business.";	
@@ -30,13 +34,13 @@ $consultstreet_service_content  = get_theme_mod( 'consultstreet_service_content'
 $consultstreet_service_area_disabled = get_theme_mod('consultstreet_service_area_disabled', true); 
 $consultstreet_service_area_title = get_theme_mod('consultstreet_service_area_title', __(''.$title.'','arile-extra'));
 $consultstreet_service_area_des = get_theme_mod('consultstreet_service_area_des', __(''.$description.'','arile-extra'));
-if('ConsultStreet' == $activate_theme || 'FitnessBase' == $activate_theme || 'AssentPress' == $activate_theme || 'Beauty Spa Salon' == $activate_theme || 'Decorexo' == $activate_theme || 'EnvoPress' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || $activate_theme == 'Business Stock' || 'BlogWar' == $activate_theme || $activate_theme == 'ConsultHub' || $activate_theme == 'ConsultGuide'){		$text_align = 'center';	
+if('ConsultStreet' == $activate_theme || 'FitnessBase' == $activate_theme || 'AssentPress' == $activate_theme || 'Beauty Spa Salon' == $activate_theme || 'Decorexo' == $activate_theme || 'EnvoPress' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || $activate_theme == 'Business Stock' || 'BlogWar' == $activate_theme || $activate_theme == 'ConsultHub' || $activate_theme == 'ConsultGuide' || 'Architect Hub' == $activate_theme){		$text_align = 'center';	
 }
 if('BrightPress' == $activate_theme){
     $text_align = 'left';				
 }
 if($consultstreet_service_area_disabled == true): ?>
-<section class="theme-block theme-services <?php if('FitnessBase' == $activate_theme){ echo 'theme-bg-gradient-bg'; }?><?php if('EnvoPress' == $activate_theme || 'ConsultZone' == $activate_theme){echo 'vrsn-three';}?>" id="theme-services">
+<section class="theme-block theme-services <?php if('FitnessBase' == $activate_theme){ echo 'theme-bg-gradient-bg'; }?><?php if('EnvoPress' == $activate_theme || 'ConsultZone' == $activate_theme || 'Architect Hub' == $activate_theme){echo 'vrsn-three';}?>" id="theme-services">
 	<div class="container">
 	<?php  
 	if( ($consultstreet_service_area_title) || ($consultstreet_service_area_des)!='' ): ?>
@@ -161,6 +165,14 @@ if($consultstreet_service_area_disabled == true): ?>
 					$service2_title = 'Corporate Finance';
 					$service3_title = 'SEO Optimization';	
 				} 
+				if('Architect Hub' == $activate_theme){
+					$service1_icon = 'fa-usd';
+					$service2_icon = 'fa-clone';
+					$service3_icon = 'fa-bar-chart';
+					$service1_title = 'Architect Design';
+					$service2_title = 'House Decor';
+					$service3_title = 'Project Planning';	
+				} 
 		
 		?>
 		
@@ -246,6 +258,47 @@ if($consultstreet_service_area_disabled == true): ?>
 						<p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit quos dolor quas molesty.','arile-extra'); ?></p>
 					</article>
 				</div>	
+				
+				<?php } elseif('Architect Hub' == $activate_theme){ ?>
+				<div class="col-lg-4 col-md-6 col-sm-12">				
+					<article class="service-content text-<?php echo $text_align; ?>">
+						<figure class="service-content-thumbnail">
+						<?php if('Architect Hub' == $activate_theme){ ?>
+						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/designexo/images/theme-service10.jpg" alt="No Long-Term Contract" title="Architectural Design"></a>
+						<?php }else{ ?>
+							<a href="#"><i class="fa <?php echo $service1_icon; ?>"></i></a>
+					    <?php }	?>
+						</figure>
+						<h4 class="service-title"><a href="#"><?php esc_html_e(''.$service1_title.'','arile-extra'); ?></a></h4>
+						<p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit quos dolor quas molesty.','arile-extra'); ?></p>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">				
+					<article class="service-content text-<?php echo $text_align; ?>">
+						<figure class="service-content-thumbnail">
+						<?php if('Architect Hub' == $activate_theme){ ?>
+						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/designexo/images/theme-service11.jpg" alt="Exercise Round the Clock" title="Architectural Design"></a>
+						<?php }else{ ?>
+							<a href="#"><i class="fa <?php echo $service2_icon; ?>"></i></a>
+					    <?php }	?>
+						</figure>
+						<h4 class="service-title"><a href="#"><?php esc_html_e(''.$service2_title.'','arile-extra'); ?></a></h4>
+						<p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit quos dolor quas molesty.','arile-extra'); ?></p>		
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">				
+					<article class="service-content text-<?php echo $text_align; ?>">
+						<figure class="service-content-thumbnail">
+						<?php if('Architect Hub' == $activate_theme){ ?>
+						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/designexo/images/theme-service12.jpg" alt="Best Equipment" title="Architectural Design"></a>
+						<?php }else{ ?>
+							<a href="#"><i class="fa <?php echo $service3_icon; ?>"></i></a>
+					    <?php }	?>
+						</figure>
+						<h4 class="service-title"><a href="#"><?php esc_html_e(''.$service3_title.'','arile-extra'); ?></a></h4>
+						<p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit quos dolor quas molesty.','arile-extra'); ?></p>
+					</article>
+				</div>		
 
 				
 		   <?php } else { ?>	

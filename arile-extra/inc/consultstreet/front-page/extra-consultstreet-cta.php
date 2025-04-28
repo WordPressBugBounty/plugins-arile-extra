@@ -28,6 +28,12 @@ if('Decorexo' == $activate_theme){
     $button = 'Contact Us';
     $ctaimage = 'theme-cta-bg3';	
 }
+if('Architect Hub' == $activate_theme){
+    $title = 'Do you have any questions?';
+    $description = 'Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.';
+    $button = 'Contact Us';
+    $ctaimage = 'theme-cta-bg6';	
+}
 if('Arvada' == $activate_theme){
 	$title = 'Do you have any questions?';
     $description = 'How can we help your business? Because many people love our free consultation for growing their businesses which gives the user complete freedom to set up a business.';

@@ -14,6 +14,10 @@ if('Decorexo' == $activate_theme){
     $title = 'Latest Projects';
     $description = 'Our friendly and qualified team is committed to designing excellence, responsibility, and sustainability.';				
 }
+if('Architect Hub' == $activate_theme){
+    $title = 'All Architecture & Interior Design Solutions';
+    $description = 'We provide you with a beautiful working place that your work is productive to growth your business.';				
+}
 $consultstreet_project_content  = get_theme_mod( 'consultstreet_project_content');
 $consultstreet_project_disabled = get_theme_mod('consultstreet_project_disabled', true); 
 $consultstreet_project_front_container_size = get_theme_mod('consultstreet_project_front_container_size', 'container-full');
@@ -128,6 +132,16 @@ if($consultstreet_project_disabled == true): ?>
 								$project2_title = 'Business Consulting';
 								$project3_title = 'Business Advisor';
 								$project4_title = 'Digital Marketing';
+							} 
+							if('Architect Hub' == $activate_theme){	
+								$project1_image = '21';
+								$project2_image = '22';
+								$project3_image = '23';
+								$project4_image = '24';
+								$project1_title = 'Building Design';
+								$project2_title = 'Architecturer Ideas';
+								$project3_title = 'Exterior Renovation';
+								$project4_title = 'Architecture Design';
 							} 
 
 					?>

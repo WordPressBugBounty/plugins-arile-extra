@@ -33,6 +33,9 @@ function arileextra_consultstreet_frontpage_sections_settings( $wp_customize ){
 	if('EarnPress' == $activate_theme){				
 		$ctaimage = 'theme-cta-bg5';
 	}
+	if('Architect Hub' == $activate_theme){				
+		$ctaimage = 'theme-cta-bg6';
+	}
 	if('FitnessBase' == $activate_theme){
 		$page_editor_path = trailingslashit( arile_extra_plugin_dir ) . '/inc/consultstreet/customizer/customizer-page-editor/customizer-page-editor.php';
 		if ( file_exists( $page_editor_path ) ) { require_once( $page_editor_path ); }
@@ -319,6 +322,16 @@ function arileextra_consultstreet_customizer_selective_refresh_settings($wp_cust
 		$cdescription = 'Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.';
 		$cbutton = 'Contact Us';
 		$ctaimage = 'theme-cta-bg3';
+	}
+	if('Architect Hub' == $activate_theme){
+		$stitle = 'We Build Creative Architecture Design Solutions';
+		$sdescription = 'Architect and interior design services';	
+		$ptitle = 'All Architecture & Interior Design Solutions';
+        $pdescription = 'We provide you with a beautiful working place that your work is productive to growth your business.';
+		$ctitle = 'Do you have any questions?';
+		$cdescription = 'Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.';
+		$cbutton = 'Contact Us';
+		$ctaimage = 'theme-cta-bg6';
 	}
 	if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'EarnPress' == $activate_theme || 'Business Stock' == $activate_theme){
 		if('Business Stock' == $activate_theme){ $stitle = 'We Provide Best Services'; }		

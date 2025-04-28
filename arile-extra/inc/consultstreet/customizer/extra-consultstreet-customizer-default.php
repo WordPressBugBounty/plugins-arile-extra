@@ -156,6 +156,12 @@ if ( ! function_exists( 'arileextra_consultstreet_main_slider_default_content' )
 					$slider1_title = 'Top Consulting Ideas for Start Business';
 					$slider2_title = 'Best Choice for Your Business';	
 				}
+				if('Architect Hub' == $activate_theme){
+					$image1_slide = 22;
+					$image2_slide = 9;
+					$slider1_title = 'DESIGN. STYLE. COMFORT';
+					$slider2_title = 'IMPACTFUL KITCHEN DESIGN';	
+				}
 				
 				
 				$consultstreet_main_slider_data = $wp_customize->get_setting( 'consultstreet_main_slider_content' );
@@ -389,6 +395,15 @@ if ( ! function_exists( 'arileextra_consultstreet_service_default_content' ) ) :
 					$service3_title = 'SEO Optimization';
                     $choice = 'icon';					
 				} 
+				if('Architect Hub' == $activate_theme){
+					$service1_icon = 'fa-money';
+					$service2_icon = 'fa-users';
+					$service3_icon = 'fa-globe';
+					$service1_title = 'Architect Design';
+					$service2_title = 'House Decor';
+					$service3_title = 'Project Planning';
+                    $choice = 'image';					
+				} 
 		
 			$consultstreet_service_data = $wp_customize->get_setting( 'consultstreet_service_content' );
 				if ( ! empty( $consultstreet_service_data ) ) {
@@ -464,7 +479,43 @@ if ( ! function_exists( 'arileextra_consultstreet_service_default_content' ) ) :
 						),
 						
 					) );
-				}else{
+					
+				} elseif('Architect Hub' == $activate_theme){	
+					
+					$consultstreet_service_data->default = json_encode( array(
+						array(
+						'icon_value' => 'fa '.$service1_icon.'',
+						'title'      => esc_html__( ''.$service1_title.'', 'arile-extra' ),
+						'text'       => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit quos dolor quas molesty.',
+						'choice'    => 'customizer_repeater_'.$choice.'',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-service10.jpg',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b15',
+						),
+						array(
+						'icon_value' => 'fa '.$service2_icon.'',
+						'title'      => esc_html__( ''.$service2_title.'', 'arile-extra' ),
+						'text'       => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit quos dolor quas molesty.',
+						'choice'    => 'customizer_repeater_'.$choice.'',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-service11.jpg',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b16',
+						),
+						array(
+						'icon_value' => 'fa '.$service3_icon.'',
+						'title'      => esc_html__( ''.$service3_title.'', 'arile-extra' ),
+						'text'       => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit quos dolor quas molesty.',
+						'choice'    => 'customizer_repeater_'.$choice.'',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-service12.jpg',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b17',
+						),
+						
+					) );
+				} else{
 					
 					$consultstreet_service_data->default = json_encode( array(
 						array(
@@ -574,6 +625,16 @@ if ( ! function_exists( 'arileextra_consultstreet_project_default_content' ) ) :
 					$project2_title = 'Business Consulting';
 					$project3_title = 'Business Advisor';
 					$project4_title = 'Digital Marketing';
+				}
+				if('Architect Hub' == $activate_theme){	
+					$project1_image = '21';
+					$project2_image = '22';
+					$project3_image = '23';
+					$project4_image = '24';
+				    $project1_title = 'Building Design';
+					$project2_title = 'Architecturer Ideas';
+					$project3_title = 'Exterior Renovation';
+					$project4_title = 'Architecture Design';
 				}
 
 			$consultstreet_project_data = $wp_customize->get_setting( 'consultstreet_project_content' );
@@ -693,7 +754,7 @@ if ( ! function_exists( 'arileextra_consultstreet_testimonial_default_content' )
 						),				
 					) );
                 }					
-				if('BrightPress' == $activate_theme || 'FitnessBase' == $activate_theme || 'EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'EarnPress' == $activate_theme || 'ConsultZone' == $activate_theme || 'Business Stock' == $activate_theme || 'ConsultHub' == $activate_theme || 'ConsultGuide' == $activate_theme){
+				if('BrightPress' == $activate_theme || 'FitnessBase' == $activate_theme || 'EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'EarnPress' == $activate_theme || 'ConsultZone' == $activate_theme || 'Business Stock' == $activate_theme || 'ConsultHub' == $activate_theme || 'ConsultGuide' == $activate_theme || 'Architect Hub' == $activate_theme){
 					$consultstreet_testimonial_data->default = json_encode( array(
 						array(
 						'title'      => 'Olivia Kevinson',
