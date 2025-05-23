@@ -5,6 +5,9 @@ $arilewp_project_front_container_size = get_theme_mod('arilewp_project_front_con
 if('Agency Street' == $activate_theme || 'Agency Firm' == $activate_theme){
 	$arilewp_project_area_title = get_theme_mod('arilewp_project_area_title', __('Our Projects','arile-extra'));
 	$arilewp_project_area_des = get_theme_mod('arilewp_project_area_des', __('<b>Our latest </b> works','arile-extra'));
+}elseif('Interior Craft' == $activate_theme){
+	$arilewp_project_area_title = get_theme_mod('arilewp_project_area_title', __('Our Portfolio','arile-extra'));
+	$arilewp_project_area_des = get_theme_mod('arilewp_project_area_des', __('<b>See Our </b> latest Projects','arile-extra'));
 }else{
 	$arilewp_project_area_title = get_theme_mod('arilewp_project_area_title', __('Our Portfolio','arile-extra'));
 	$arilewp_project_area_des = get_theme_mod('arilewp_project_area_des', __('<b>Recent</b> Projects','arile-extra'));
@@ -62,7 +65,7 @@ if($arilewp_project_disabled == true): ?>
 							</div>
 				<?php } } else { 
 				
-			if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme){					
+			if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme || 'Interior Craft' == $activate_theme){					
 			    $project1_title = 'RESIDENTIAL DESIGN';
 				$project2_title = 'COMMERCIAL DESIGN';
 				$project3_title = 'HOUSING PROJECT';

@@ -17,7 +17,7 @@ $activate_theme_data = wp_get_theme(); // getting current theme data
 $activate_theme = $activate_theme_data->name;
 if($arilewp_testimonial_disabled == true): 
 ?>
-<section class="theme-block theme-testimonial <?php if($activate_theme == 'Business Street' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm') { echo 'vrsn-two theme-bg-default'; } ?>" id="theme-testimonial">
+<section class="theme-block theme-testimonial <?php if($activate_theme == 'Business Street' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm' || 'Interior Craft' == $activate_theme) { echo 'vrsn-two theme-bg-default'; } ?>" id="theme-testimonial">
 
 <?php if($activate_theme != 'Business Street' && $activate_theme != 'Ariletech') {?>
 
@@ -34,12 +34,12 @@ if($arilewp_testimonial_disabled == true):
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="theme-section-module text-center">
 					<?php if($arilewp_testimonial_area_title != null): ?>
-						<p class="theme-section-subtitle wow animate fadeInLeft <?php if($activate_theme == 'Business Street' || $activate_theme == 'StrangerWP' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || 'Roseville Blog' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm') { echo 'text-light'; } ?>" data-wow-delay=".3s"><?php echo wp_kses_post($arilewp_testimonial_area_title); ?></p>
+						<p class="theme-section-subtitle wow animate fadeInLeft <?php if($activate_theme == 'Business Street' || $activate_theme == 'StrangerWP' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || 'Roseville Blog' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm' || 'Interior Craft' == $activate_theme) { echo 'text-light'; } ?>" data-wow-delay=".3s"><?php echo wp_kses_post($arilewp_testimonial_area_title); ?></p>
 					<?php endif; ?>
 					<?php if($arilewp_testimonial_area_des != null): ?>
-						<h2 class="theme-section-title wow animate fadeInRight <?php if($activate_theme == 'Business Street' || $activate_theme == 'StrangerWP' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || 'Roseville Blog' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm') { echo 'text-light'; } ?>" data-wow-delay=".3s"><?php echo wp_kses_post($arilewp_testimonial_area_des); ?></h2>
+						<h2 class="theme-section-title wow animate fadeInRight <?php if($activate_theme == 'Business Street' || $activate_theme == 'StrangerWP' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || 'Roseville Blog' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm' || 'Interior Craft' == $activate_theme) { echo 'text-light'; } ?>" data-wow-delay=".3s"><?php echo wp_kses_post($arilewp_testimonial_area_des); ?></h2>
 					<?php endif; ?>
-						<div class="theme-separator-line-horrizontal-full wow animate fadeInUpBig <?php if($activate_theme == 'Business Street' || $activate_theme == 'Ariletech' || $activate_theme == 'Alberta' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm') { echo 'theme-bg-light'; } ?>" data-wow-delay=".3s"></div>
+						<div class="theme-separator-line-horrizontal-full wow animate fadeInUpBig <?php if($activate_theme == 'Business Street' || $activate_theme == 'Ariletech' || $activate_theme == 'Alberta' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm' || 'Interior Craft' == $activate_theme) { echo 'theme-bg-light'; } ?>" data-wow-delay=".3s"></div>
 					</div>
 				</div>
 			</div>
@@ -57,7 +57,7 @@ if($arilewp_testimonial_disabled == true):
 					?>
 					    <div class="col-lg-4 col-md-6 col-sm-12">
 						
-						<?php if($activate_theme == 'Business Street' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm') {?>
+						<?php if($activate_theme == 'Business Street' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm' || 'Interior Craft' == $activate_theme) {?>
 						
 							<article class="theme-testimonial-block vrsn-two wow animate slideInUp" data-wow-delay=".3s">
 								<div class="testimonial-content vrsn-two">
@@ -115,7 +115,7 @@ if($arilewp_testimonial_disabled == true):
 					<?php } } else 
 					{ ?>
 							
-				<?php if($activate_theme == 'Business Street' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm') {?>
+				<?php if($activate_theme == 'Business Street' || $activate_theme == 'InteriorPress' || $activate_theme == 'Ariletech' || 'DecorPress' == $activate_theme || $activate_theme == 'Alberta' || $activate_theme == 'Architecto' || $activate_theme == 'InnoPress' || $activate_theme == 'Agency Street' || 'Etowah' == $activate_theme || $activate_theme == 'Sayre' || $activate_theme == 'Agency Firm' || 'Interior Craft' == $activate_theme) {?>
 	
 					<div class="col-lg-4 col-md-6 col-sm-12">		
 					    <article class="theme-testimonial-block vrsn-two wow animate slideInUp" data-wow-delay=".3s">								

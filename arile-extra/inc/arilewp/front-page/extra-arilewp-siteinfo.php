@@ -4,7 +4,7 @@ $arilewp_theme_info_disabled = get_theme_mod('arilewp_theme_info_disabled', true
 $activate_theme_data = wp_get_theme(); // getting current theme data
 $activate_theme = $activate_theme_data->name;
 if($arilewp_theme_info_disabled == true): ?>
-<div class="container <?php if($activate_theme == 'Ariletech' || $activate_theme == 'Fresno' || $activate_theme == 'Architecto' || 'InnoPress' == $activate_theme) { echo 'vrsn-two'; } ?>" id="theme-info-area">
+<div class="container <?php if($activate_theme == 'Ariletech' || $activate_theme == 'Fresno' || $activate_theme == 'Architecto' || 'InnoPress' == $activate_theme || 'Interior Craft' == $activate_theme) { echo 'vrsn-two'; } ?>" id="theme-info-area">
 	<div class="row theme-info-area wow animate fadeInDown" data-wow-delay=".3s">
 	<?php 
 	if ( ! empty( $arilewp_theme_info_content ) ) {

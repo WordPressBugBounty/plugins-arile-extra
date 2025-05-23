@@ -7,7 +7,11 @@ if('Agency Street' == $activate_theme){
 }elseif('Agency Firm' == $activate_theme){
 	$arilewp_service_area_title = get_theme_mod('arilewp_service_area_title', __('What We Do','arile-extra'));
 	$arilewp_service_area_des = get_theme_mod('arilewp_service_area_des', __('<b>What Services Do</b> We Offer','arile-extra'));
-}else{
+}elseif('Interior Craft' == $activate_theme){
+	$arilewp_service_area_title = get_theme_mod('arilewp_service_area_title', __('Our Services','arile-extra'));
+	$arilewp_service_area_des = get_theme_mod('arilewp_service_area_des', __('<b>We provide the</b> best interior services','arile-extra'));
+}
+else{
 	$arilewp_service_area_title = get_theme_mod('arilewp_service_area_title', __('Our Services','arile-extra'));
 	$arilewp_service_area_des = get_theme_mod('arilewp_service_area_des', __('<b>We provide the</b> best services','arile-extra'));
 }
@@ -99,7 +103,7 @@ if($arilewp_service_area_disabled == true): ?>
 			else
 			{ 
 
-            if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme){				
+            if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme || 'Interior Craft' == $activate_theme){				
 				$service1_title = 'ARCHITECTURAL DESIGN';
 				$service2_title = 'INTERIOR DESIGN';
 				$service3_title = 'LIGHTING DESIGN';	
@@ -122,7 +126,7 @@ if($arilewp_service_area_disabled == true): ?>
 				<div class="col-lg-4 col-md-6 col-sm-12">				
 					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre' && $activate_theme != 'Hague Firm'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
 						<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '-two';} ?>">
-                        <?php if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme){ ?>
+                        <?php if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme || 'Interior Craft' == $activate_theme){ ?>
 						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/arilewp/images/theme-service1.jpg" alt="Architectural Design" title="Architectural Design"></a>
 						<?php } elseif('Architect Design' == $activate_theme || 'Architecto' == $activate_theme){ ?>
 						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/arilewp/images/theme-service4.jpg" alt="Architectural Design" title="Architectural Design"></a>
@@ -143,7 +147,7 @@ if($arilewp_service_area_disabled == true): ?>
 				<div class="col-lg-4 col-md-6 col-sm-12">				
 					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre' && $activate_theme != 'Hague Firm'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
 						<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '-two';} ?>">
-                        <?php if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme){ ?>
+                        <?php if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme || 'Interior Craft' == $activate_theme){ ?>
 						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/arilewp/images/theme-service2.jpg" alt="Interior Design" title="Interior Design"></a>
 						<?php } elseif('Architect Design' == $activate_theme || 'Architecto' == $activate_theme){ ?>
 						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/arilewp/images/theme-service5.jpg" alt="House Decor" title="House Decor"></a>
@@ -164,7 +168,7 @@ if($arilewp_service_area_disabled == true): ?>
 				<div class="col-lg-4 col-md-6 col-sm-12">				
 					<article class="<?php if($activate_theme != 'Business Street' && $activate_theme != 'DesignHub' && $activate_theme != 'Agency Street' && $activate_theme != 'Sayre' && $activate_theme != 'Hague Firm'){echo 'service-content text-center';}else{echo 'service-content-two media';} ?>">
 						<figure class="service-content-thumbnail<?php if($activate_theme == 'Business Street' || $activate_theme == 'DesignHub' || $activate_theme == 'Agency Street' || $activate_theme == 'Sayre' || $activate_theme == 'Hague Firm'){echo '-two';} ?>">	
-						<?php if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme){ ?>
+						<?php if('InteriorPress' == $activate_theme || 'DecorPress' == $activate_theme || 'Interior Startup' == $activate_theme || 'Interior Space' == $activate_theme || 'Interior Craft' == $activate_theme){ ?>
 						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/arilewp/images/theme-service3.jpg" alt="Lighting Design" title="Lighting Design"></a>
 						<?php } elseif('Architect Design' == $activate_theme || 'Architecto' == $activate_theme){ ?>
 						    <a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/arilewp/images/theme-service6.jpg" alt="Project Planning" title="Project Planning"></a>

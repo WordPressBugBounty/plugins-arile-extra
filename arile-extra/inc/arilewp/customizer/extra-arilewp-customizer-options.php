@@ -197,6 +197,15 @@ function arileextra_arilewp_customizer_selective_refresh_settings($wp_customize)
 		$tdescription = '<b>Happy Words From</b> Happy Customer';
 		$btitle = 'Our Blog';
 		$bdescription = '<b>Digital World</b> News';
+	}elseif('Interior Craft' == $activate_theme){
+		$stitle = 'Our Services';
+		$sdescription = '<b>We provide the</b> best interior services';
+		$ptitle = 'Our Portfolio';
+        $pdescription = '<b>See Our </b> latest Projects';
+		$ttitle = 'Testimonials';
+		$tdescription = '<b>What clients</b>  are say';
+		$btitle = 'Recent Updates';
+		$bdescription = '<b>Our Latest</b> News';
 	}else{
 		$stitle = 'Our Services';
 		$sdescription = '<b>We provide the</b> best services';
