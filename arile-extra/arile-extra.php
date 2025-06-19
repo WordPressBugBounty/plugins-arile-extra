@@ -3,7 +3,7 @@
 * Plugin Name:       	Arile Extra
 * Plugin URI:        	https://themearile.com/arilewp/
 * Description:       	Arile Extra Enhances ThemeArile with additional functionality.
-* Version:           	7.8
+* Version:           	7.9
 * Author: 				ThemeArile
 * Author URI: 			https://themearile.com/
 * Tested up to: 		6.8
@@ -31,7 +31,7 @@ if( !function_exists('arile_extra_init') ){
 	    if( 'ConsultStreet' == $activate_theme || 'BrightPress' == $activate_theme || 'FitnessBase' == $activate_theme || 'ConsultStreet Child Theme' == $activate_theme || 'AssentPress' == $activate_theme  || 'Beauty Spa Salon' == $activate_theme || 'Decorexo' == $activate_theme || 'EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'EarnPress' == $activate_theme || 'MadisonBlog' == $activate_theme || 'ConsultZone' == $activate_theme || 'Business Stock' == $activate_theme || 'BlogWar' == $activate_theme || 'ConsultHub' == $activate_theme || 'ConsultGuide' == $activate_theme || 'Architect Hub' == $activate_theme){
 			require("inc/consultstreet/consultstreet.php");
 		}
-		if( 'Designexo' == $activate_theme || 'Empresa' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'IntecoPress' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'Interior Dark' == $activate_theme || 'SpiceMag' == $activate_theme || 'DesignTech' == $activate_theme || 'InteriorX' == $activate_theme || 'Technoex' == $activate_theme || 'Interior Decor' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Interior House' == $activate_theme || 'BeautyCare' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme || 'Business Model' == $activate_theme || 'CreationWP' == $activate_theme){
+		if( 'Designexo' == $activate_theme || 'Empresa' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'IntecoPress' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'Interior Dark' == $activate_theme || 'SpiceMag' == $activate_theme || 'DesignTech' == $activate_theme || 'InteriorX' == $activate_theme || 'Technoex' == $activate_theme || 'Interior Decor' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Interior House' == $activate_theme || 'BeautyCare' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme || 'Business Model' == $activate_theme || 'CreationWP' == $activate_theme || 'Elevora Dark' == $activate_theme){
 			require("inc/designexo/designexo.php");
 		}
 	}

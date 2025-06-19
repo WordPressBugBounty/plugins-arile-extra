@@ -532,6 +532,32 @@ if ( ! function_exists( 'arileextra_designexo_main_slider_default_content' ) ) :
 						
 					) );
 				}
+				
+				if('Elevora Dark' == $activate_theme){
+						$designexo_main_slider_data->default = json_encode( array(
+						array(
+						'title'      => esc_html__( 'Innovative solutions for Digital World', 'arile-extra' ),
+						'subtitle'       => esc_html__( 'Create. Work. Inspire.', 'arile-extra' ),
+						'text'       => esc_html__( 'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos suspendisse potenti interdum et malesuada fames ipsum.', 'arile-extra' ),
+						'button_text'      => __('Check it out','arile-extra'),
+						'link'       => '#',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-slide36.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b10',				
+						),
+						array(
+						'title'      => esc_html__( 'We make creative solutions', 'arile-extra' ),
+						'subtitle'       => esc_html__( 'Design Agency', 'arile-extra' ),
+						'text'       => esc_html__( 'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos suspendisse potenti interdum et malesuada fames ipsum.', 'arile-extra' ),
+						'button_text'      => __('Check it out','arile-extra'),
+						'link'       => '#',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-slide34.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b14',
+						),
+						
+					) );
+				}
  				
 					
 				}
@@ -577,7 +603,7 @@ if ( ! function_exists( 'arileextra_designexo_theme_info_default_content' ) ) :
 						),
 					) );
 				}
-                if('Empresa' == $activate_theme || 'Technoex' == $activate_theme){
+                if('Empresa' == $activate_theme || 'Technoex' == $activate_theme || 'Elevora Dark' == $activate_theme){
 					$designexo_theme_info_content_control->default = json_encode( array(
 						array(
 						'icon_value' => 'fa fa-trophy',
@@ -942,7 +968,7 @@ if ( ! function_exists( 'arileextra_designexo_service_default_content' ) ) :
 					
 				}
 				
-				if('Monster Dark' == $activate_theme || 'DesignTech' == $activate_theme || 'Business Model' == $activate_theme){	
+				if('Monster Dark' == $activate_theme || 'DesignTech' == $activate_theme || 'Business Model' == $activate_theme || 'Elevora Dark' == $activate_theme){	
 					
 					$designexo_service_data->default = json_encode( array(
 
@@ -1325,7 +1351,7 @@ if ( ! function_exists( 'arileextra_designexo_project_default_content' ) ) :
 					) );
 				}
 				
-			    if('Monster Dark' == $activate_theme || 'DesignTech' == $activate_theme || 'Business Model' == $activate_theme){	
+			    if('Monster Dark' == $activate_theme || 'DesignTech' == $activate_theme || 'Business Model' == $activate_theme || 'Elevora Dark' == $activate_theme){	
 					$designexo_project_data->default = json_encode( array(
 						array(
 						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-project13.jpg',
