@@ -201,7 +201,7 @@ function arileextra_designexo_customizer_selective_refresh_settings($wp_customiz
 		if('Empresa' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'SpiceMag' == $activate_theme || 'DesignTech' == $activate_theme || 'Technoex' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Business Model' == $activate_theme || 'Elevora Dark' == $activate_theme){ $service_area_des = 'We offer many services to growth'; }
 		
 		if('BeautyCare' == $activate_theme ){ $service_area_des = 'Featured Treatment'; }
-		if('Architect House' == $activate_theme ){ $service_area_des = 'WE BUILD CREATIVE Architect DESIGN'; }
+		if('Architect House' == $activate_theme || 'Designarch' == $activate_theme){ $service_area_des = 'WE BUILD CREATIVE Architect DESIGN'; }
 		if('Fitnessgo' == $activate_theme ){ $service_area_des = 'OUR POPULAR CLASSES'; }
 		
 		$wp_customize->add_setting( 'designexo_service_area_des',
@@ -239,7 +239,7 @@ function arileextra_designexo_customizer_selective_refresh_settings($wp_customiz
 		if('Empresa' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'SpiceMag' == $activate_theme || 'DesignTech' == $activate_theme || 'Technoex' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Business Model' == $activate_theme || 'Elevora Dark' == $activate_theme){ $project_area_des = 'Our latest works'; }
 		if('Interior Decor' == $activate_theme){ $project_area_des = 'ALL INTERIOR & ARCHITECTURE DESIGN SOLUTIONS'; }
 		if('BeautyCare' == $activate_theme){ $project_area_des = 'Featured Works'; }
-		if('Architect House' == $activate_theme){ $project_area_des = 'ALL Architect DESIGN SOLUTIONS'; }
+		if('Architect House' == $activate_theme || 'Designarch' == $activate_theme){ $project_area_des = 'ALL Architect DESIGN SOLUTIONS'; }
 		if('Fitnessgo' == $activate_theme){ $project_area_des = 'OUR FEATURED PORTFOLIO'; }
 		
 		$wp_customize->add_setting( 'designexo_project_area_des',
@@ -287,7 +287,7 @@ function arileextra_designexo_customizer_selective_refresh_settings($wp_customiz
 			'type' => 'text',
 		));	
 		
-		if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme){ $testimonial_area_des = 'WHAT OUR CLIENTS SAY ABOUT US'; }
+		if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme || 'Designarch' == $activate_theme){ $testimonial_area_des = 'WHAT OUR CLIENTS SAY ABOUT US'; }
 		if('Empresa' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'SpiceMag' == $activate_theme || 'DesignTech' == $activate_theme || 'Technoex' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Business Model' == $activate_theme || 'Elevora Dark' == $activate_theme){ $testimonial_area_des = 'Happy clients say'; }
 		if('IntecoPress' == $activate_theme){ $testimonial_area_des = 'WHAT OUR CLIENTS SAY'; }
 		if('BeautyCare' == $activate_theme){ $testimonial_area_des = 'What Customer Say About Us'; }

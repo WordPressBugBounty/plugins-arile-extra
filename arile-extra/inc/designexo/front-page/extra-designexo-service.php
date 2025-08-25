@@ -5,7 +5,7 @@ $designexo_service_area_title = get_theme_mod('designexo_service_area_title', __
 if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'IntecoPress' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme){
 $designexo_service_area_des = get_theme_mod('designexo_service_area_des', __('We build creative interior design','arile-extra'));
 }
-if('Architect House' == $activate_theme){
+if('Architect House' == $activate_theme || 'Designarch' == $activate_theme){
 $designexo_service_area_des = get_theme_mod('designexo_service_area_des', __('We build creative architect design','arile-extra'));
 }
 if('Empresa' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'SpiceMag' == $activate_theme || 'DesignTech' == $activate_theme || 'Technoex' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Business Model' == $activate_theme || 'Elevora Dark' == $activate_theme){
@@ -99,7 +99,7 @@ if($designexo_service_area_disabled == true): ?>
 			} }
 			else
 			{ ?>
-		    <?php if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior Trends' == $activate_theme){ ?>
+		    <?php if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior Trends' == $activate_theme ){ ?>
 				<div class="col-lg-4 col-md-6 col-sm-12">				
 					<article class="service-content wow animate fadeInUp" data-wow-delay=".3s">
 						<figure class="service-content-thumbnail">
@@ -432,6 +432,36 @@ if($designexo_service_area_disabled == true): ?>
 							<a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/designexo/images/theme-service15.jpg" alt="PERSONAL TRAINING" title="PERSONAL TRAINING"></a>
 						</figure>
 						<h5 class="service-title"><a href="#"><?php esc_html_e('PERSONAL TRAINING','arile-extra'); ?></a></h5>
+						<p><?php esc_html_e('Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.','arile-extra'); ?></p>
+					</article>
+				</div>
+            <?php } ?>
+			
+			<?php if('Designarch' == $activate_theme){ ?>
+				<div class="col-lg-4 col-md-6 col-sm-12">				
+					<article class="service-content wow animate fadeInUp" data-wow-delay=".3s">
+						<figure class="service-content-thumbnail">
+							<a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/designexo/images/theme-service10.jpg" alt="INTERIOR DESIGN" title="INTERIOR DESIGN"></a>
+						</figure>
+						<h5 class="service-title"><a href="#"><?php esc_html_e('ARCHITECT DESIGN','arile-extra'); ?></a></h5>
+						<p><?php esc_html_e('Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.','arile-extra'); ?></p>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">				
+					<article class="service-content wow animate fadeInUp" data-wow-delay=".3s">
+						<figure class="service-content-thumbnail">
+							<a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/designexo/images/theme-service11.jpg" alt="Architectural Design" title="Architectural Design"></a>
+						</figure>
+						<h5 class="service-title"><a href="#"><?php esc_html_e('HOUSE DECOR','arile-extra'); ?></a></h5>
+						<p><?php esc_html_e('Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.','arile-extra'); ?></p>		
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">				
+					<article class="service-content wow animate fadeInUp" data-wow-delay=".3s">
+						<figure class="service-content-thumbnail">
+							<a href="#"><img class="img-fluid" src="<?php echo arile_extra_plugin_url; ?>/inc/designexo/images/theme-service12.jpg" alt="EXTERIOR DESIGN" title="EXTERIOR DESIGN"></a>
+						</figure>
+						<h5 class="service-title"><a href="#"><?php esc_html_e('PROJECT PLANNING','arile-extra'); ?></a></h5>
 						<p><?php esc_html_e('Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.','arile-extra'); ?></p>
 					</article>
 				</div>

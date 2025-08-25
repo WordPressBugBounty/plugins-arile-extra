@@ -8,7 +8,7 @@ $designexo_theme_blog_category = get_theme_mod('designexo_theme_blog_category');
 $activate_theme_data = wp_get_theme(); // getting current theme data
 $activate_theme = $activate_theme_data->name;
 if($designexo_blog_disabled == true): ?>
-	<section class="theme-block theme-blog <?php if($activate_theme == 'IntecoPress'){ echo 'list-view-news';} ?> theme-bg-grey <?php if('Interior Dark' == $activate_theme || 'Interior Decor' == $activate_theme || 'BeautyCare' == $activate_theme || 'Interior Trends' == $activate_theme){ echo 'vrsn-three'; } ?>" id="theme-blog">
+	<section class="theme-block theme-blog <?php if($activate_theme == 'IntecoPress'){ echo 'list-view-news';} ?> theme-bg-grey <?php if('Interior Dark' == $activate_theme || 'Interior Decor' == $activate_theme || 'BeautyCare' == $activate_theme || 'Interior Trends' == $activate_theme || 'Designarch' == $activate_theme){ echo 'vrsn-three'; } ?>" id="theme-blog">
 	 <?php if($designexo_blog_area_title != null || $designexo_blog_area_des != null): ?>
 		<div class="container">
 			<div class="row">
@@ -38,7 +38,7 @@ if($designexo_blog_disabled == true): ?>
 			{	
 				while(have_posts()):the_post();
 				{ ?>
-					<div class="col-lg-<?php if($activate_theme == 'Architect Decor' || $activate_theme == 'Monster Dark' || 'DesignTech' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'BeautyCare' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme || 'Business Model' == $activate_theme || 'CreationWP' == $activate_theme || 'Elevora Dark' == $activate_theme){ echo '4';}else{echo '6';} ?> col-md-6 col-sm-12">
+					<div class="col-lg-<?php if($activate_theme == 'Architect Decor' || $activate_theme == 'Monster Dark' || 'DesignTech' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'BeautyCare' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme || 'Business Model' == $activate_theme || 'CreationWP' == $activate_theme || 'Elevora Dark' == $activate_theme || 'Designarch' == $activate_theme){ echo '4';}else{echo '6';} ?> col-md-6 col-sm-12">
 					
 					<?php if($activate_theme == 'IntecoPress'){ ?>
 			

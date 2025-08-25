@@ -6,7 +6,7 @@ $designexo_project_area_title = get_theme_mod('designexo_project_area_title', __
 if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'IntecoPress' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior House' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme){
 $designexo_project_area_des = get_theme_mod('designexo_project_area_des', __('ALL INTERIOR DESIGN SOLUTIONS','arile-extra'));
 }
-if('Architect House' == $activate_theme){
+if('Architect House' == $activate_theme || 'Designarch' == $activate_theme){
 $designexo_project_area_des = get_theme_mod('designexo_project_area_des', __('ALL Architect DESIGN SOLUTIONS','arile-extra'));
 }
 if('Empresa' == $activate_theme || 'Monster Dark' == $activate_theme || 'NewsMedia' == $activate_theme || 'SpiceMag' == $activate_theme || 'DesignTech' == $activate_theme || 'Technoex' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Atlanta Blog' == $activate_theme || 'Business Model' == $activate_theme || 'Elevora Dark' == $activate_theme){
@@ -467,7 +467,7 @@ if($designexo_project_disabled == true): ?>
 							</div>
 						<?php } ?>
 						
-					    <?php if('Architect House' == $activate_theme){ ?>
+					    <?php if('Architect House' == $activate_theme || 'Designarch' == $activate_theme){ ?>
 
 							<div class="col-lg-3 col-md-6 col-sm-12">	
 								<article class="theme-project-content mb-0 wow animate zoomIn" data-wow-delay=".3s">

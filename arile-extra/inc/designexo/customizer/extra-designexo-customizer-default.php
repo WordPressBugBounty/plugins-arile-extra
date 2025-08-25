@@ -558,6 +558,32 @@ if ( ! function_exists( 'arileextra_designexo_main_slider_default_content' ) ) :
 						
 					) );
 				}
+				
+				if('Designarch' == $activate_theme){
+						$designexo_main_slider_data->default = json_encode( array(
+						array(
+						'title'      => esc_html__( 'Architect. Design. Style', 'arile-extra' ),
+						'subtitle'       => esc_html__( 'ARCHITECTURE Firms', 'arile-extra' ),
+						'text'       => esc_html__( 'We provide all types of architecture and interior design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.', 'arile-extra' ),
+						'button_text'      => __('Check it out','arile-extra'),
+						'link'       => '#',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-slide37.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b10',				
+						),
+						array(
+						'title'      => esc_html__( 'GREAT CREATIVE DESIGNS', 'arile-extra' ),
+						'subtitle'       => esc_html__( 'Enjoy Your Space', 'arile-extra' ),
+						'text'       => esc_html__( 'We provide all types of architecture and interior design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.', 'arile-extra' ),
+						'button_text'      => __('Check it out','arile-extra'),
+						'link'       => '#',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-slide28.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b14',
+						),
+						
+					) );
+				}
  				
 					
 				}
@@ -626,7 +652,7 @@ if ( ! function_exists( 'arileextra_designexo_theme_info_default_content' ) ) :
 					) );
 				}	
 
-				if('Architects' == $activate_theme){
+				if('Architects' == $activate_theme || 'Designarch' == $activate_theme){
 					$designexo_theme_info_content_control->default = json_encode( array(
 						array(
 						'icon_value' => 'fa fa-star-o',
@@ -1118,7 +1144,7 @@ if ( ! function_exists( 'arileextra_designexo_service_default_content' ) ) :
 					
 				}
 				
-				if('Architect House' == $activate_theme){	
+				if('Architect House' == $activate_theme || 'Designarch' == $activate_theme){	
 					
 					$designexo_service_data->default = json_encode( array(
 						array(
@@ -1441,7 +1467,7 @@ if ( ! function_exists( 'arileextra_designexo_project_default_content' ) ) :
 					) );
 				}
 				
-			if('Architect House' == $activate_theme){	
+			if('Architect House' == $activate_theme || 'Designarch' == $activate_theme){	
 					$designexo_project_data->default = json_encode( array(
 						array(
 						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-project24.jpg',
