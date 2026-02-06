@@ -2,7 +2,7 @@
 $designexo_testimonial_options = get_theme_mod('designexo_testimonial_content');
 $designexo_testimonial_disabled = get_theme_mod('designexo_testimonial_disabled', true); 
 $designexo_testimonial_area_title = get_theme_mod('designexo_testimonial_area_title', __('Testimonials','arile-extra'));
-if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme || 'Designarch' == $activate_theme){
+if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme || 'Designarch' == $activate_theme || 'Interior Portfolio' == $activate_theme){
 $designexo_testimonial_area_des = get_theme_mod('designexo_testimonial_area_des', __('WHAT OUR CLIENTS SAY ABOUT US','arile-extra'));
 }
 if('IntecoPress' == $activate_theme){ $designexo_testimonial_area_des = get_theme_mod('designexo_testimonial_area_des', __('WHAT OUR CLIENTS SAY','arile-extra')); }

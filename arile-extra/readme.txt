@@ -2,8 +2,8 @@
 Contributors: ThemeArile
 Tags: projects, widgets, admin, companion, homepage
 Requires at least: 3.3+
-Tested up to: 6.8
-Stable tag: 8.0
+Tested up to: 6.9
+Stable tag: 8.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -14,6 +14,15 @@ Arile Extra is a companion plugin for ArileWP WordPress theme by ThemeArile.
 This Arile Extra plugin is created for ThemeArile. This plugin provides beautiful additional frontpage sections for ThemeArile. And it will allow you full customizer settings to your front page sections. The plugin options are user-friendly and You can use this plugin for every ThemeArile theme.
 
 == Changelog ==
+
+= 8.3 =
+* Added ConsultGrowth theme support.
+
+= 8.2 =
+* Added Interior Portfolio theme support.
+
+= 8.1 =
+* Added Elmira theme support.
 
 = 8.0 =
 * Added Designarch theme support.

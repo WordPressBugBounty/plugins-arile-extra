@@ -98,6 +98,10 @@ if ( ! function_exists( 'arileextra_arilewp_main_slider_default_content' ) ) :
 				$image1_slide = 27;
 				$image2_slide = 31;
 		}
+		if('Elmira' == $activate_theme){
+				$image1_slide = 33;
+				$image2_slide = 32;
+		}
 			
 			if('InteriorPress' == $activate_theme){	
 				$slide1_title = 'ELEGANT & COMFORTABLE';
@@ -171,6 +175,10 @@ if ( ! function_exists( 'arileextra_arilewp_main_slider_default_content' ) ) :
 			$slide1_title = "MODERN INTERIOR DESIGN SOLUTIONS";
 			$slide2_title = 'AWARD WINNINGS DESIGN';
 			}
+			elseif('Elmira' == $activate_theme){	
+			$slide1_title = "We make the creative solutions for your business!";
+			$slide2_title = 'Awesome solution for your business';
+			}
 			else{
 			    $slide1_title = 'We Create Amazing WordPress Themes';
 				$slide2_title = 'Best Digital Marketing Solutions';			
@@ -179,7 +187,7 @@ if ( ! function_exists( 'arileextra_arilewp_main_slider_default_content' ) ) :
 		if('Architecto' == $activate_theme){	
 			$slider_desc = "We’re an elite squad otf alpha geeks, creative storytellers and business minds. Together, we mix art and science to turn brands into favorites.";
 		}
-		elseif('InnoPress' == $activate_theme || 'Sayre' == $activate_theme){
+		elseif('InnoPress' == $activate_theme || 'Sayre' == $activate_theme || 'Elmira' == $activate_theme){
 			$slider_desc = "Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.";
 		}
 		elseif('Agency Street' == $activate_theme || 'Agency Firm' == $activate_theme){

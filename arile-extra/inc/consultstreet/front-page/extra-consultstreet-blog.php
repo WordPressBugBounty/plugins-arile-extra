@@ -7,7 +7,7 @@ $consultstreet_theme_blog_category = get_theme_mod('consultstreet_theme_blog_cat
 $activate_theme_data = wp_get_theme(); // getting current theme data
 $activate_theme = $activate_theme_data->name;
 if($consultstreet_blog_disabled == true): ?>
-	<section class="theme-block theme-blog <?php if($activate_theme == 'BrightPress' || $activate_theme == 'FitnessBase' || $activate_theme == 'Beauty Spa Salon' || 'Arvada' == $activate_theme  || $activate_theme == 'EarnPress' || 'Business Stock' == $activate_theme) { echo 'list-view-news'; } ?><?php if('EnvoPress' == $activate_theme || 'ConsultZone' == $activate_theme || 'Architect Hub' == $activate_theme){echo 'vrsn-three';}?>" id="theme-blog">
+	<section class="theme-block theme-blog <?php if($activate_theme == 'BrightPress' || $activate_theme == 'FitnessBase' || $activate_theme == 'Beauty Spa Salon' || 'Arvada' == $activate_theme  || $activate_theme == 'EarnPress' || 'Business Stock' == $activate_theme) { echo 'list-view-news'; } ?><?php if('EnvoPress' == $activate_theme || 'ConsultZone' == $activate_theme || 'Architect Hub' == $activate_theme || 'ConsultGrowth' == $activate_theme){echo 'vrsn-three';}?>" id="theme-blog">
 	 <?php if($consultstreet_blog_area_title != null || $consultstreet_blog_area_des != null): ?>
 		<div class="container">
 			<div class="row">
@@ -104,7 +104,7 @@ if($consultstreet_blog_disabled == true): ?>
 					</div>	
 				<?php endif; ?>	
 				
-				<?php if($activate_theme == 'EnvoPress' || $activate_theme == 'ConsultZone' || $activate_theme == 'Architect Hub'): ?>
+				<?php if($activate_theme == 'EnvoPress' || $activate_theme == 'ConsultZone' || $activate_theme == 'Architect Hub' || 'ConsultGrowth' == $activate_theme): ?>
 					<div class="col-lg-4 col-md-6 col-sm-12">
 						<article class="post wow animate zoomIn" data-wow-delay=".3s">	
 							<?php if(has_post_thumbnail()): ?>						

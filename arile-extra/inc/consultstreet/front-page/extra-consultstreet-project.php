@@ -1,5 +1,5 @@
 <?php
-if('ConsultStreet' == $activate_theme || 'BrightPress' == $activate_theme || 'AssentPress' == $activate_theme || 'EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || 'Business Stock' == $activate_theme || 'BlogWar' == $activate_theme || $activate_theme == 'ConsultHub' || $activate_theme == 'ConsultGuide'){	   $title = 'Our Latest Projects';
+if('ConsultStreet' == $activate_theme || 'BrightPress' == $activate_theme || 'AssentPress' == $activate_theme || 'EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || 'Business Stock' == $activate_theme || 'BlogWar' == $activate_theme || $activate_theme == 'ConsultHub' || $activate_theme == 'ConsultGuide' || $activate_theme == 'ConsultGrowth'){	   $title = 'Our Latest Projects';
     $description = 'We provide you with a beautiful working place that your work is productive to growth your business.';	
 }
 if('FitnessBase' == $activate_theme){
@@ -24,7 +24,7 @@ $consultstreet_project_front_container_size = get_theme_mod('consultstreet_proje
 $consultstreet_project_area_title = get_theme_mod('consultstreet_project_area_title', __(''.$title.'','arile-extra'));
 $consultstreet_project_area_des = get_theme_mod('consultstreet_project_area_des', __(''.$description.'','arile-extra'));
 if($consultstreet_project_disabled == true): ?>
-	<section class="theme-block theme-project theme-bg-grey <?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme){echo 'vrsn-three';}?>" id="theme-project">
+	<section class="theme-block theme-project theme-bg-grey <?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'ConsultGrowth' == $activate_theme){echo 'vrsn-three';}?>" id="theme-project">
 	    <?php if($consultstreet_project_area_title != null || $consultstreet_project_area_des != null): ?>
 		<div class="container">
 			<div class="row">
@@ -73,7 +73,7 @@ if($consultstreet_project_disabled == true): ?>
 							</div>
 				<?php } } else {
                     
-							if('ConsultStreet' == $activate_theme || 'AssentPress' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || 'BlogWar' == $activate_theme || $activate_theme == 'ConsultHub' || $activate_theme == 'ConsultGuide'){
+							if('ConsultStreet' == $activate_theme || 'AssentPress' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || 'BlogWar' == $activate_theme || $activate_theme == 'ConsultHub' || $activate_theme == 'ConsultGuide' || 'ConsultGrowth' == $activate_theme){
 								$project1_image = '1';
 								$project2_image = '2';
 								$project3_image = '3';
@@ -154,7 +154,7 @@ if($consultstreet_project_disabled == true): ?>
 										<h5 class="theme-project-title"><?php esc_html_e(''.$project1_title.'','arile-extra'); ?></h5>
 										<?php if('Decorexo' != $activate_theme){ ?>
 										<p>
-										<?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme){ ?>
+										<?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'ConsultGrowth' == $activate_theme){ ?>
 										<?php esc_html_e('Lorem ipsum dolor sit amet.','arile-extra'); ?>
 										<?php } else {?>
 										<?php esc_html_e('Lorem ipsum dolor sit amet, sit sit consectetuer, etiam metus arcu ultrices eros, nam gravida et dapibus.','arile-extra'); ?>
@@ -174,7 +174,7 @@ if($consultstreet_project_disabled == true): ?>
 										<h5 class="theme-project-title"><?php esc_html_e(''.$project2_title.'','arile-extra'); ?></h5>
 										<?php if('Decorexo' != $activate_theme){ ?>
 										<p>
-										<?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme){ ?>
+										<?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'ConsultGrowth' == $activate_theme){ ?>
 										<?php esc_html_e('Lorem ipsum dolor sit amet.','arile-extra'); ?>
 										<?php } else {?>
 										<?php esc_html_e('Lorem ipsum dolor sit amet, sit sit consectetuer, etiam metus arcu ultrices eros, nam gravida et dapibus.','arile-extra'); ?>
@@ -194,7 +194,7 @@ if($consultstreet_project_disabled == true): ?>
 										<h5 class="theme-project-title"><?php esc_html_e(''.$project3_title.'','arile-extra'); ?></h5>
 										<?php if('Decorexo' != $activate_theme){ ?>
 										<p>
-										<?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme){ ?>
+										<?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'ConsultGrowth' == $activate_theme){ ?>
 										<?php esc_html_e('Lorem ipsum dolor sit amet.','arile-extra'); ?>
 										<?php } else {?>
 										<?php esc_html_e('Lorem ipsum dolor sit amet, sit sit consectetuer, etiam metus arcu ultrices eros, nam gravida et dapibus.','arile-extra'); ?>
@@ -214,7 +214,7 @@ if($consultstreet_project_disabled == true): ?>
 										<h5 class="theme-project-title"><?php esc_html_e(''.$project4_title.'','arile-extra'); ?></h5>
 										<?php if('Decorexo' != $activate_theme){ ?>
 										<p>
-										<?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme){ ?>
+										<?php if('EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'ConsultGrowth' == $activate_theme){ ?>
 										<?php esc_html_e('Lorem ipsum dolor sit amet.','arile-extra'); ?>
 										<?php } else {?>
 										<?php esc_html_e('Lorem ipsum dolor sit amet, sit sit consectetuer, etiam metus arcu ultrices eros, nam gravida et dapibus.','arile-extra'); ?>

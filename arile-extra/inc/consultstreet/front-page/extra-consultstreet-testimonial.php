@@ -6,7 +6,7 @@ $consultstreet_testimonial_area_des = get_theme_mod('consultstreet_testimonial_a
 $consultstreet_testimonial_overlay_disable = get_theme_mod('consultstreet_testimonial_overlay_disable', false); 
 if($consultstreet_testimonial_disabled == true): 
 ?>
-<section class="theme-block theme-testimonial <?php if('EnvoPress' == $activate_theme || 'Business Stock' == $activate_theme){echo 'vrsn-three';}?>" id="theme-testimonial">	
+<section class="theme-block theme-testimonial <?php if('EnvoPress' == $activate_theme || 'Business Stock' == $activate_theme || 'ConsultGrowth' == $activate_theme){echo 'vrsn-three';}?>" id="theme-testimonial">	
 	<div class="container">	
 	     <?php if($consultstreet_testimonial_area_title != null || $consultstreet_testimonial_area_des != null): ?>
 			<div class="row">
@@ -34,7 +34,7 @@ if($consultstreet_testimonial_disabled == true):
 							$test_desc = ! empty( $testimonial_iteam->text ) ? $testimonial_iteam->text : '';
 							$designation = ! empty( $testimonial_iteam->designation ) ? $testimonial_iteam->designation : '';
 					?>
-					    <?php if('EnvoPress' == $activate_theme || 'Business Stock' == $activate_theme){echo '<div class="col-lg-4 col-md-6 col-sm-12">';}else{echo'<div class="col-lg-12 col-md-12 col-sm-12">';}?>
+					    <?php if('EnvoPress' == $activate_theme || 'Business Stock' == $activate_theme || 'ConsultGrowth' == $activate_theme){echo '<div class="col-lg-4 col-md-6 col-sm-12">';}else{echo'<div class="col-lg-12 col-md-12 col-sm-12">';}?>
 							<article class="theme-testimonial-block">
 							<?php if($testimonial_iteam->image_url != null): ?>
 								<figure class="thumbnail">
@@ -59,7 +59,7 @@ if($consultstreet_testimonial_disabled == true):
 					<?php } } else 
 					{ ?>
 
-					<?php if('EnvoPress' == $activate_theme || 'Business Stock' == $activate_theme || 'Business Stock' == $activate_theme){ ?>
+					<?php if('EnvoPress' == $activate_theme || 'Business Stock' == $activate_theme || 'Business Stock' == $activate_theme || 'ConsultGrowth' == $activate_theme){ ?>
 						
 					<div class="col-lg-4 col-md-6 col-sm-12">
 						<article class="theme-testimonial-block">

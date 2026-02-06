@@ -162,6 +162,12 @@ if ( ! function_exists( 'arileextra_consultstreet_main_slider_default_content' )
 					$slider1_title = 'DESIGN. STYLE. COMFORT';
 					$slider2_title = 'IMPACTFUL KITCHEN DESIGN';	
 				}
+				if('ConsultGrowth' == $activate_theme){
+					$image1_slide = 23;
+					$image2_slide = 2;
+					$slider1_title = 'Expert Business Consulting for Sustainable Success';
+					$slider2_title = 'Amazing Business Ideas to Achieve Success';	
+				}
 				
 				
 				$consultstreet_main_slider_data = $wp_customize->get_setting( 'consultstreet_main_slider_content' );
@@ -332,7 +338,7 @@ if ( ! function_exists( 'arileextra_consultstreet_service_default_content' ) ) :
 			$activate_theme_data = wp_get_theme(); // getting current theme data
 			$activate_theme = $activate_theme_data->name;
 		
-				if('ConsultStreet' == $activate_theme || 'AssentPress' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || 'BlogWar' == $activate_theme || 'ConsultHub' == $activate_theme || 'ConsultGuide' == $activate_theme){
+				if('ConsultStreet' == $activate_theme || 'AssentPress' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || 'BlogWar' == $activate_theme || 'ConsultHub' == $activate_theme || 'ConsultGuide' == $activate_theme || 'ConsultGrowth' == $activate_theme){
 					$service1_icon = 'fa-usd';
 					$service2_icon = 'fa-clone';
 					$service3_icon = 'fa-bar-chart';
@@ -566,7 +572,7 @@ if ( ! function_exists( 'arileextra_consultstreet_project_default_content' ) ) :
 		$activate_theme_data = wp_get_theme(); // getting current theme data
 			$activate_theme = $activate_theme_data->name;
 		
-				if('ConsultStreet' == $activate_theme || 'AssentPress' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || 'BlogWar' == $activate_theme || 'ConsultHub' == $activate_theme || 'ConsultGuide' == $activate_theme){
+				if('ConsultStreet' == $activate_theme || 'AssentPress' == $activate_theme || 'EarnPress' == $activate_theme || $activate_theme == 'MadisonBlog' || $activate_theme == 'ConsultZone' || 'BlogWar' == $activate_theme || 'ConsultHub' == $activate_theme || 'ConsultGuide' == $activate_theme || 'ConsultGrowth' == $activate_theme){
 					$project1_image = '1';
 					$project2_image = '2';
 					$project3_image = '3';
@@ -754,7 +760,7 @@ if ( ! function_exists( 'arileextra_consultstreet_testimonial_default_content' )
 						),				
 					) );
                 }					
-				if('BrightPress' == $activate_theme || 'FitnessBase' == $activate_theme || 'EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'EarnPress' == $activate_theme || 'ConsultZone' == $activate_theme || 'Business Stock' == $activate_theme || 'ConsultHub' == $activate_theme || 'ConsultGuide' == $activate_theme || 'Architect Hub' == $activate_theme){
+				if('BrightPress' == $activate_theme || 'FitnessBase' == $activate_theme || 'EnvoPress' == $activate_theme || 'Arvada' == $activate_theme || 'EarnPress' == $activate_theme || 'ConsultZone' == $activate_theme || 'Business Stock' == $activate_theme || 'ConsultHub' == $activate_theme || 'ConsultGuide' == $activate_theme || 'Architect Hub' == $activate_theme || 'ConsultGrowth' == $activate_theme){
 					$consultstreet_testimonial_data->default = json_encode( array(
 						array(
 						'title'      => 'Olivia Kevinson',

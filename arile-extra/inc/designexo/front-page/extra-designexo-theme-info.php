@@ -23,7 +23,7 @@ $designexo_theme_info_disabled = get_theme_mod('designexo_theme_info_disabled', 
 				$text = ! empty( $info_item->text ) ? apply_filters( 'designexo_translate_single_string',
 				$info_item->text, 'Theme Info Area' ) : '';
 				?>
-						<div class="col-lg-<?php if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme || 'Designarch' == $activate_theme){ echo '3'; } ?><?php if('Empresa' == $activate_theme || 'Technoex' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'BeautyCare' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Elevora Dark' == $activate_theme){ echo '4'; } ?> col-md-6 col-xs-12">
+						<div class="col-lg-<?php if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Trends' == $activate_theme || 'CreationWP' == $activate_theme || 'Designarch' == $activate_theme || 'Interior Portfolio' == $activate_theme){ echo '3'; } ?><?php if('Empresa' == $activate_theme || 'Technoex' == $activate_theme || 'Interior Decor' == $activate_theme || 'Interior House' == $activate_theme || 'BeautyCare' == $activate_theme || 'Architect House' == $activate_theme || 'Fitnessgo' == $activate_theme || 'Elevora Dark' == $activate_theme){ echo '4'; } ?> col-md-6 col-xs-12">
 							<div class="media wow animate flipInX" data-wow-delay=".3s">
 								<?php if ( ! empty( $icon ) ) :?>
 									<i class="icon fa <?php echo esc_html( $icon ); ?>"></i>
@@ -39,7 +39,7 @@ $designexo_theme_info_disabled = get_theme_mod('designexo_theme_info_disabled', 
 							</div>
 						</div>
 				<?php } } else { ?>
-				    <?php if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'CreationWP' == $activate_theme || 'Designarch' == $activate_theme){ ?>
+				    <?php if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architects' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'CreationWP' == $activate_theme || 'Designarch' == $activate_theme || 'Interior Portfolio' == $activate_theme){ ?>
 						<div class="col-lg-3 col-md-6 col-xs-12">
 							<div class="media wow animate flipInX" data-wow-delay=".3s">
 								<i class="icon fa fa-star-o"></i>

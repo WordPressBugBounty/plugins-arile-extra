@@ -127,7 +127,13 @@ if( $consultstreet_main_slider_disabled == true ): ?>
 					$image2_slide = 9;
 					$slider1_title = 'DESIGN. STYLE. COMFORT';
 					$slider2_title = 'IMPACTFUL KITCHEN DESIGN';	
-				}				
+				}		
+				if('ConsultGrowth' == $activate_theme){
+			        $image1_slide = 23;
+					$image2_slide = 2;
+					$slider1_title = 'Expert Business Consulting for Sustainable Success';
+					$slider2_title = 'Amazing Business Ideas to Achieve Success';	
+				}					
 			
 			?>
 			

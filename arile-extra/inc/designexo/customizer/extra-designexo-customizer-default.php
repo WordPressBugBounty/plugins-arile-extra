@@ -584,6 +584,32 @@ if ( ! function_exists( 'arileextra_designexo_main_slider_default_content' ) ) :
 						
 					) );
 				}
+				
+				if('Interior Portfolio' == $activate_theme){
+						$designexo_main_slider_data->default = json_encode( array(
+						array(
+						'title'      => esc_html__( 'ELEGANT & COMFORTABLE', 'arile-extra' ),
+						'subtitle'       => esc_html__( 'Interior Design', 'arile-extra' ),
+						'text'       => esc_html__( 'We provide all types of architecture and interior design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.', 'arile-extra' ),
+						'button_text'      => __('Check it out','arile-extra'),
+						'link'       => '#',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-slide38.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b10',				
+						),
+						array(
+						'title'      => esc_html__( 'LATEST DESIGN TRENDS', 'arile-extra' ),
+						'subtitle'       => esc_html__( 'Enjoy Your Space', 'arile-extra' ),
+						'text'       => esc_html__( 'We provide all types of architecture and interior design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.', 'arile-extra' ),
+						'button_text'      => __('Check it out','arile-extra'),
+						'link'       => '#',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-slide5.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b14',
+						),
+						
+					) );
+				}
  				
 					
 				}
@@ -601,7 +627,7 @@ if ( ! function_exists( 'arileextra_designexo_theme_info_default_content' ) ) :
 			
 				if ( ! empty( $designexo_theme_info_content_control ) ) {
 					
-				if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'CreationWP' == $activate_theme){
+				if('Designexo' == $activate_theme || 'InteriorWP' == $activate_theme || 'Designexo Child Theme' == $activate_theme || 'Architect Decor' == $activate_theme || 'Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'CreationWP' == $activate_theme || 'Interior Portfolio' == $activate_theme){
 					$designexo_theme_info_content_control->default = json_encode( array(
 						array(
 						'icon_value' => 'fa fa-star-o',
@@ -1220,6 +1246,46 @@ if ( ! function_exists( 'arileextra_designexo_service_default_content' ) ) :
 					
 				}
 				
+				if('Interior Portfolio' == $activate_theme){	
+					
+					$designexo_service_data->default = json_encode( array(
+						array(
+						'icon_value' => 'fa-laptop',
+						'title'      => esc_html__( 'INTERIOR DESIGN', 'arile-extra' ),
+						'text'       => 'Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.',
+						'choice'    => 'customizer_repeater_image',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-service16.jpg',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b15',
+						),
+						array(
+						'icon_value' => 'fa fa-opencart',
+						'title'      => esc_html__( 'ARCHITECT DESIGN', 'arile-extra' ),
+						'text'       => 'Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.',
+						'choice'    => 'customizer_repeater_image',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-service17.jpg',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b16',
+						),
+						array(
+						'icon_value' => 'fa fa-users',
+						'title'      => esc_html__( 'HOUSE DECOR', 'arile-extra' ),
+						'text'       => 'Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.',
+						'choice'    => 'customizer_repeater_image',
+						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-service18.jpg',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b17',
+						),
+						
+					) );
+					
+				}
+				
+				
+				
 				}
 	    }
 add_action( 'customize_register', 'arileextra_designexo_service_default_content' );
@@ -1407,7 +1473,7 @@ if ( ! function_exists( 'arileextra_designexo_project_default_content' ) ) :
 					) );
 				}
 				
-				if('Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'CreationWP' == $activate_theme){	
+				if('Interior Dark' == $activate_theme || 'InteriorX' == $activate_theme || 'Interior Decor' == $activate_theme || 'CreationWP' == $activate_theme || 'Interior Portfolio' == $activate_theme){	
 					$designexo_project_data->default = json_encode( array(
 						array(
 						'image_url'  => arile_extra_plugin_url .'/inc/designexo/images/theme-project16.jpg',
